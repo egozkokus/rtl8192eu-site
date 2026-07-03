@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
+/* ============================================================================
+   RTL8192EU — design tokens
+   Concept: the interface is a live hex-dump / instrument readout.
+   Color IS information — it mirrors the chip's own read-state code:
+     data (alive) = amber · zeros (empty) = steel · 0xEA (unmapped) = slate.
+   Two bus masters: host aperture = amber, 8051/MCU = violet.
+   ========================================================================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink:        #090c12;   /* board substrate                         */
+  --ink-2:      #10141d;   /* panel                                   */
+  --ink-3:      #161c28;   /* raised panel / chip                     */
+  --line:       #222a38;   /* hairline border                         */
+  --line-2:     #2f3a4c;   /* brighter border / hover                 */
+  --fg:         #e7ebf3;   /* primary text                            */
+  --fg-muted:   #8b95a8;   /* secondary text                          */
+  --fg-dim:     #586176;   /* faint text / captions                   */
+
+  /* signal palette (read-state + bus-master semantics) */
+  --data:       #f4b740;   /* powered & configured / host aperture    */
+  --data-2:     #ffcf6b;   /* data highlight                          */
+  --mcu:        #a07cff;   /* 8051 / MCU XDATA / the "discovery" thread*/
+  --mcu-2:      #c0a6ff;
+  --zeros:      #5e7590;   /* powered but empty (0x00)                 */
+  --unmapped:   #333c4b;   /* open bus (0xEA)                         */
+  --ok:         #5fcf80;   /* verified-live checks                    */
+  --danger:     #f76d6d;   /* do-not-touch / degrade warnings         */
+
+  --glow-data:  color-mix(in oklab, var(--data) 40%, transparent);
+  --glow-mcu:   color-mix(in oklab, var(--mcu) 42%, transparent);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-dim: var(--fg-dim);
+  --color-data: var(--data);
+  --color-data-2: var(--data-2);
+  --color-mcu: var(--mcu);
+  --color-mcu-2: var(--mcu-2);
+  --color-zeros: var(--zeros);
+  --color-unmapped: var(--unmapped);
+  --color-ok: var(--ok);
+  --color-danger: var(--danger);
+
+  --font-sans: var(--font-plex-hebrew), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ink);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* faint engineered grid + corner glows, evoking a board / die substrate */
+  background-image:
+    radial-gradient(900px 500px at 88% -8%, color-mix(in oklab, var(--data) 8%, transparent), transparent 70%),
+    radial-gradient(760px 460px at 6% 4%, color-mix(in oklab, var(--mcu) 9%, transparent), transparent 72%),
+    linear-gradient(var(--ink), var(--ink));
+  background-attachment: fixed;
+}
+
+/* Latin/hex readouts stay LTR even inside RTL prose */
+.mono { font-family: var(--font-mono); font-feature-settings: "zero" 1; }
+code, pre, .ltr { direction: ltr; unicode-bidi: isolate; }
+pre.ltr, .ltr-block { text-align: left; }
+
+::selection { background: color-mix(in oklab, var(--data) 35%, transparent); color: #fff; }
+
+a { color: var(--mcu-2); text-decoration: none; }
+a:hover { color: var(--mcu); }
+
+:focus-visible {
+  outline: 2px solid var(--data);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* subtle instrument scrollbar */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb {
+  background: var(--line-2); border-radius: 8px;
+  border: 3px solid var(--ink);
+}
+::-webkit-scrollbar-thumb:hover { background: #3a465b; }
+
+@keyframes poweron {
+  0%   { opacity: 0; transform: scale(0.35); filter: saturate(0.2) brightness(0.5); }
+  60%  { filter: saturate(1.4) brightness(1.4); }
+  100% { opacity: 1; transform: scale(1); filter: none; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 620ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

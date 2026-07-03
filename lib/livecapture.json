@@ -1,0 +1,1396 @@
+{
+  "capturedAt": "2026-07-03T18:33:03",
+  "device": "RTL8192EU (0BDA:818B)",
+  "method": "read-only vendor control transfers (bRequest=0x05) + safe PON",
+  "descriptor": {
+    "idVendor": "0x0BDA",
+    "idProduct": "0x818B",
+    "bcdDevice": "0x0200",
+    "bcdUSB": "0x0210",
+    "iManufacturer": "Realtek",
+    "iProduct": "802.11n NIC",
+    "iSerialNumber": "00e04c000001",
+    "endpoints": [
+      "0x05",
+      "0x06",
+      "0x08",
+      "0x84",
+      "0x87"
+    ]
+  },
+  "identity": {
+    "SYS_CFG_0x00F0": "0x0C441137",
+    "SYS_CFG1_0x00FC": "0x00000007",
+    "ver_0x00F8": "0x00058129",
+    "REG_9346CR_0x000A": "0x0020",
+    "decode": {
+      "TESTCHIP": false,
+      "chipver_15_12": 1,
+      "vendor_19_16": 4,
+      "rtl_id_27_24": 12
+    }
+  },
+  "registers": {
+    "SYS_ISO_CTRL": {
+      "addr": "0x0000",
+      "width": 16,
+      "value": "0x8ED8"
+    },
+    "SYS_FUNC_EN": {
+      "addr": "0x0002",
+      "width": 16,
+      "value": "0xDC1F"
+    },
+    "APS_FSMCO": {
+      "addr": "0x0004",
+      "width": 32,
+      "value": "0x14030012"
+    },
+    "SYS_CLKR": {
+      "addr": "0x0008",
+      "width": 16,
+      "value": "0x7C2B"
+    },
+    "RSV_CTRL": {
+      "addr": "0x001C",
+      "width": 8,
+      "value": "0x00"
+    },
+    "EFUSE_CTRL": {
+      "addr": "0x0030",
+      "width": 32,
+      "value": "0x10600000"
+    },
+    "MCUFWDL": {
+      "addr": "0x0080",
+      "width": 32,
+      "value": "0x00000305"
+    },
+    "HMETFR": {
+      "addr": "0x01CC",
+      "width": 32,
+      "value": "0x00000000"
+    },
+    "HMEBOX0": {
+      "addr": "0x01D0",
+      "width": 32,
+      "value": "0x00000000"
+    },
+    "HMEBOX1": {
+      "addr": "0x01D4",
+      "width": 32,
+      "value": "0x00000000"
+    },
+    "scratch_0430": {
+      "addr": "0x0430",
+      "width": 8,
+      "value": "0x01"
+    },
+    "stat_04F0": {
+      "addr": "0x04F0",
+      "width": 32,
+      "value": "0x44332211"
+    },
+    "stat_04F4": {
+      "addr": "0x04F4",
+      "width": 32,
+      "value": "0x88776655"
+    },
+    "MACID_lo": {
+      "addr": "0x0610",
+      "width": 32,
+      "value": "0x00000000"
+    }
+  },
+  "tsf_timer_0x0560": {
+    "reads": [
+      "0x00002632",
+      "0x0000EC20",
+      "0x0001B444"
+    ],
+    "alive": true
+  },
+  "macid_0x0610": "00:00:00:00:00:00",
+  "aperture_map": [
+    {
+      "addr": "0x0000",
+      "value": "0xD8",
+      "class": "data"
+    },
+    {
+      "addr": "0x0100",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0200",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x0400",
+      "value": "0xFF",
+      "class": "data"
+    },
+    {
+      "addr": "0x0500",
+      "value": "0x24",
+      "class": "data"
+    },
+    {
+      "addr": "0x0600",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0700",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0800",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0900",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0A00",
+      "value": "0xC8",
+      "class": "data"
+    },
+    {
+      "addr": "0x0B00",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0C00",
+      "value": "0x40",
+      "class": "data"
+    },
+    {
+      "addr": "0x0D00",
+      "value": "0x50",
+      "class": "data"
+    },
+    {
+      "addr": "0x0E00",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x0F00",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0x1000",
+      "value": "0x19",
+      "class": "data"
+    },
+    {
+      "addr": "0x1100",
+      "value": "0x86",
+      "class": "data"
+    },
+    {
+      "addr": "0x1200",
+      "value": "0x12",
+      "class": "data"
+    },
+    {
+      "addr": "0x1300",
+      "value": "0xCC",
+      "class": "data"
+    },
+    {
+      "addr": "0x1400",
+      "value": "0x88",
+      "class": "data"
+    },
+    {
+      "addr": "0x1500",
+      "value": "0x41",
+      "class": "data"
+    },
+    {
+      "addr": "0x1600",
+      "value": "0xA9",
+      "class": "data"
+    },
+    {
+      "addr": "0x1700",
+      "value": "0x63",
+      "class": "data"
+    },
+    {
+      "addr": "0x1800",
+      "value": "0xA4",
+      "class": "data"
+    },
+    {
+      "addr": "0x1900",
+      "value": "0x75",
+      "class": "data"
+    },
+    {
+      "addr": "0x1A00",
+      "value": "0x17",
+      "class": "data"
+    },
+    {
+      "addr": "0x1B00",
+      "value": "0x33",
+      "class": "data"
+    },
+    {
+      "addr": "0x1C00",
+      "value": "0x8A",
+      "class": "data"
+    },
+    {
+      "addr": "0x1D00",
+      "value": "0xB3",
+      "class": "data"
+    },
+    {
+      "addr": "0x1E00",
+      "value": "0x12",
+      "class": "data"
+    },
+    {
+      "addr": "0x1F00",
+      "value": "0x50",
+      "class": "data"
+    },
+    {
+      "addr": "0x2000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x2F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x3F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x4F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x5F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x6F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x7F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x8F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9A00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9B00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9C00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9D00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9E00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0x9F00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xA900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAD00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAE00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xAF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xB900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBD00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBE00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xBF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xC900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCD00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCE00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xCF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xD900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDD00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDE00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xDF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xE900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xEA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xEB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xEC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xED00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xEE00",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0xEF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF000",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF100",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF200",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF300",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF400",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF500",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF600",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF700",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF800",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xF900",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xFA00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xFB00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xFC00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xFD00",
+      "value": "0xEA",
+      "class": "unmapped"
+    },
+    {
+      "addr": "0xFE00",
+      "value": "0x00",
+      "class": "zeros"
+    },
+    {
+      "addr": "0xFF00",
+      "value": "0xEA",
+      "class": "unmapped"
+    }
+  ]
+}
