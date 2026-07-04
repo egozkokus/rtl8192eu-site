@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Hebrew, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import SiteNav from "./components/SiteNav";
 
 const plexHebrew = IBM_Plex_Sans_Hebrew({
   variable: "--font-plex-hebrew",
@@ -17,7 +18,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rtl8192eu.vercel.app"),
+  metadataBase: new URL("https://rtl8192eu-site.vercel.app"),
   title: {
     default: "RTL8192EU — נתיחה חיה של צ'יפ Wi-Fi",
     template: "%s · RTL8192EU",
@@ -48,7 +49,10 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${plexHebrew.variable} ${plexMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+      </body>
     </html>
   );
 }
