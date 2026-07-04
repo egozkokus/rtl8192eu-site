@@ -8,6 +8,7 @@ const NAV = [
   { href: "/architecture", label: "ארכיטקטורה" },
   { href: "/memory", label: "זיכרון" },
   { href: "/mcu", label: "ה-8051" },
+  { href: "/simulator", label: "סימולטור" },
   { href: "/firmware", label: "Firmware" },
   { href: "/live", label: "חי" },
   { href: "/quiz", label: "מבחן" },
